@@ -25,12 +25,12 @@ decided to write a hacky wrapper for hid-query in Python3.
 ## Get me going fast
 
 
-Install dependencies and Compile hid-queyr C library
+Install dependencies and Compile hid-query C library
 ```
 make
 ```
 
-Update Hard-coded InfluxDBClient Variables in __init__. I know there's better ways to do this.
+Update Hard-coded InfluxDBClient Variables in init of class function (I realize there's better ways to do this). 
 
 Install to /usr/local/sbin (should be in $PATH now).
 ```
@@ -48,7 +48,6 @@ make uninstall
 
 ## Build it myself
 
-
 ### Prerequisites
 
 ```
@@ -62,7 +61,7 @@ Dependencies (assuming you're building on Raspberry Pi or apt package manager ba
 apt install -y make cmake libhidapi-libusb0 libhidapi-dev libhidapi-hidraw0 libusb-dev libusb-1.0-0
 ```
 
-You can grab the latest (If there is a latest. Last I checked it was 5+ years old). Included is a clone from 2018/10.
+Grab the latest TEMPered library if there is a latest. Last I checked it was 5+ years old). Included is a clone from 2018/10.
 ```
 rm -rf ./TEMPered
 git clone https://github.com/edorfaus/TEMPered.git
@@ -76,24 +75,29 @@ make
 ```
 You should now have a compiled version of ./TEMPered/utils/hid-query.
 
-
 ### Run python script
 
-Update Hard-coded InfluxDBClient Variables in __init__. I know there's better ways to do this.
-
+Update Hard-coded InfluxDBClient Variables in init of class function (I realize there's better ways to do this). 
 ```
 python3 temperatureMon.py
 ```
 
 
 ### Example Crontab for watchdog
+
+Used to keep the script running in the background and restart if there's an issue.
 ```
 */5     * * * * root    tempMonWatchdog.sh &> /dev/null
 ```
 
 ### Grafana Settings
+Grafana Query settings
 ![Grafana Query Settings](images/grafana_settings-query.png?raw=true "Grafana Query Settings")
+
+Grafana Legend Settings
 ![Grafana Legend Settings](images/grafana_settings-legend.png?raw=true "Grafana Legend Settings")
+
+Grafana Display Settings
 ![Grafana Display Settings](images/grafana_settings-display.png?raw=true "Grafana Display Settings")
 
 References: 
