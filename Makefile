@@ -11,7 +11,7 @@ all: dep build
 
 
 dep:
-	@apt install -y python3 git make cmake libhidapi-libusb0 libhidapi-dev libhidapi-hidraw0 libusb-dev libusb-1.0-0
+	@sudo apt install -y python3 git make cmake libhidapi-libusb0 libhidapi-dev libhidapi-hidraw0 libusb-dev libusb-1.0-0
 
 build:
 	@cd ./$(TEMPERED_LIB) && cmake CMakeLists.txt && make

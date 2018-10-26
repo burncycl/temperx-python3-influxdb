@@ -34,7 +34,7 @@ Update Hard-coded InfluxDBClient Variables in init of class function (I realize 
 
 Install to /usr/local/sbin (should be in $PATH now).
 ```
-make install
+sudo make install
 ```
 
 ```
@@ -43,7 +43,7 @@ python3 temperatureMon.py
 
 Uninstall
 ```
-make uninstall
+sudo make uninstall
 ```
 
 ## Build it myself
@@ -51,14 +51,14 @@ make uninstall
 ### Prerequisites
 
 ```
-apt install -y python3 git
+sudo apt install -y python3 git
 ```
 
 ### Compile hid-query
 
 Dependencies (assuming you're building on Raspberry Pi or apt package manager based system).
 ```
-apt install -y make cmake libhidapi-libusb0 libhidapi-dev libhidapi-hidraw0 libusb-dev libusb-1.0-0
+sudo apt install -y make cmake libhidapi-libusb0 libhidapi-dev libhidapi-hidraw0 libusb-dev libusb-1.0-0
 ```
 
 Grab the latest TEMPered library if there is a latest. Last I checked it was 5+ years old). Included is a clone from 2018/10.
