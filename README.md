@@ -6,7 +6,7 @@ Read Temperature data from TEMPerX USB device (413d:2107) and write data to Infl
 
 ## Problem 
 
-Ran into issues getting newer versions of TEMPerX device (413d:2107) to work in Python3 on Raspberrypi. 
+Ran into issues getting newer versions of TEMPerX device (413d:2107) to work in Python3 on Raspberry Pi. 
 
 Tried using: 
 - PyUSB - complicated and sometimes worked sometimes didn't
