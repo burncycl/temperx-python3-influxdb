@@ -12,7 +12,6 @@
 # Be sure to update Hard-coded InfluxDBClient variables.
 
 
-
 from time import sleep
 from influxdb import InfluxDBClient
 import datetime, os
