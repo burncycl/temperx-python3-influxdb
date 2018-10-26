@@ -2,15 +2,17 @@
 
 ## Objective
 
-Read Temperature data from TEMPerX USB device (413d:2107) and write data to InfluxDB. Graph temperature data in Grafana.
+Read Temperature data from TEMPerX USB device (413d:2107) (aka TEMPer V26.1) and write data to InfluxDB. Graph temperature data in Grafana.
+
+![TemperX Device](images/temperx_device.jpg?raw=true "TemperX Device")
 
 ## Problem 
 
 Ran into issues getting newer versions of TEMPerX device (413d:2107) to work in Python3 on Raspberry Pi. 
 
 Tried using: 
-- PyUSB - complicated and sometimes worked sometimes didn't
-- Python3-hid - garbage support on Raspian Stretch)
+- PyUSB - Complicated and sometimes worked sometimes didn't.
+- Python3-hid - Crappy support on Raspian Stretch.
 
 Probably other attempts not mentioned here. All failed horribly and were huge time vampires.
 
@@ -90,9 +92,9 @@ python3 temperatureMon.py
 ```
 
 ### Grafana Settings
-![Grafana Query Settings](grafana/grafana_settings-query.png?raw=true "Grafana Query Settings")
-![Grafana Legend Settings](grafana/grafana_settings-legend.png?raw=true "Grafana Legend Settings")
-![Grafana Display Settings](grafana/grafana_settings-display.png?raw=true "Grafana Display Settings")
+![Grafana Query Settings](images/grafana_settings-query.png?raw=true "Grafana Query Settings")
+![Grafana Legend Settings](images/grafana_settings-legend.png?raw=true "Grafana Legend Settings")
+![Grafana Display Settings](images/grafana_settings-display.png?raw=true "Grafana Display Settings")
 
 References: 
 - https://github.com/edorfaus/TEMPered/issues/51
