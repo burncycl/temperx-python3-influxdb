@@ -20,6 +20,8 @@ install:
 	@cp -R $(TEMPERED_LIB) $(USR_LOCAL_SBIN)/$(TEMPERED_LIB)
 	@cp ./$(WATCHDOG_DIR)/$(WATCHDOG_SCRIPT) $(USR_LOCAL_SBIN)/$(WATCHDOG_SCRIPT)
 	@cp ./$(SCRIPT) $(USR_LOCAL_SBIN)
+	@chmod u+x $(USR_LOCAL_SBIN)/$(SCRIPT)
+	@chmod u+X $(USR_LOCAL_SBIN)/$(WATCHDOG_SCRIPT)
 	$(info Installed to ${USR_LOCAL_SBIN}/${SCRIPT})
 
 uninstall:
