@@ -11,10 +11,10 @@ Read Temperature data from TEMPerX USB device (413d:2107) (aka TEMPer V26.1) and
 Ran into issues getting newer versions of TEMPerX device (413d:2107) (aka TEMPer V26.1) to work in Python3 on Raspberry Pi.
 
 Tried using: 
-- PyUSB - Complicated and sometimes worked sometimes didn't.
-- Python3-hid - Crappy support on Raspian Stretch.
+- PyUSB - Complicated and sometimes worked, sometimes didn't.
+- python3-hid - Crappy support on Raspian Stretch.
 
-Probably other attempts not mentioned here. All failed horribly and were huge time vampires.
+Probably other attempts not mentioned here. All failed horribly, and were huge time vampires.
 
 ## Solution
 
