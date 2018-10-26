@@ -92,12 +92,15 @@ Used to keep the script running in the background and restart if there's an issu
 
 ### Grafana Settings
 Grafana Query settings
+
 ![Grafana Query Settings](images/grafana_settings-query.png?raw=true "Grafana Query Settings")
 
 Grafana Legend Settings
+
 ![Grafana Legend Settings](images/grafana_settings-legend.png?raw=true "Grafana Legend Settings")
 
 Grafana Display Settings
+
 ![Grafana Display Settings](images/grafana_settings-display.png?raw=true "Grafana Display Settings")
 
 References: 
