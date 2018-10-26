@@ -62,12 +62,13 @@ class TemperatureMonitor:
         return('{:.2f}'.format(fahrenheit_temp))
 
 
+    # Use this if InfluxDB client is giving you issues or if you're running InfluxDB, Grafana, and the Python script on the same host.
 #     def influxdb_requests(self):
-#
+# 
 #         temperature= int(self.get_temperature())
 #         url_string = 'http://localhost:8086/write?db=statsmon' # URL of InfluxDB
 #         data_string = 'temperature,device=usb1,location=outside value={}'.format(temperature)
-#
+# 
 #         r = requests.post(url_string, data=data_string)
 
 

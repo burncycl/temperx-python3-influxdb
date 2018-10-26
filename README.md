@@ -89,6 +89,11 @@ python3 temperatureMon.py
 */5     * * * * root    tempMonWatchdog.sh &> /dev/null
 ```
 
+### Grafana Settings
+![Grafana Query Settings](grafana/grafana_settings-query.png?raw=true "Grafana Query Settings")
+![Grafana Legend Settings](grafana/grafana_settings-legend.png?raw=true "Grafana Legend Settings")
+![Grafana Display Settings](grafana/grafana_settings-display.png?raw=true "Grafana Display Settings")
+
 References: 
 - https://github.com/edorfaus/TEMPered/issues/51
 - https://github.com/edorfaus/TEMPered.git # Repo where I grabbed hid-query.
